@@ -1,4 +1,4 @@
-package hao
+package pkg
 
 import (
 	"github.com/shirou/gopsutil/cpu"

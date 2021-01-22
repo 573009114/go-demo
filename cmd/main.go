@@ -6,8 +6,9 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
-	"test/internal/hao"
 	"time"
+
+	"github.com/573009114/go-demo/tree/main/internal/pkg"
 )
 
 //KmrMetrics 是KMR的结构化的接口返回信息, 自动生成结构体网站 https://transform.tools/json-to-go
@@ -53,7 +54,7 @@ type KmrMetrics struct {
 
 //Gettestcpu 通过本地程序包，获取CPU信息
 func Gettestcpu() {
-	s, _ := hao.GetCPUInfo()
+	s, _ := pkg.GetCPUInfo()
 	fmt.Println(s[0])
 }
 
